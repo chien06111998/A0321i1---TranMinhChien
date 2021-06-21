@@ -29,42 +29,44 @@ public class MenuDesignForApps {
                 default:
                     System.out.println("No choice");
             }
+            System.out.print("Enter your choice: ");
+            choice = sc.nextInt();
         }
     }
-    public static void Draw_the_triangle() {
+    static void Draw_the_triangle() {
         Scanner sc = new Scanner(System.in);
         System.out.println("[ Draw the triangle ]");
-        System.out.print("Enter n: ");
+        System.out.print("Enter hight: ");
         int hight = sc.nextInt();
         for (int i = hight; i >= 1; --i) {
             for (int j = 1; j <= i; ++j) {
-                System.out.println("* ");
+                System.out.print("* ");
             }
             System.out.println();
         }
     }
-    public static void Draw_the_square() {
+    static void Draw_the_square() {
         Scanner sc = new Scanner(System.in);
         System.out.println("[ Draw the square ]");
         System.out.print("Enter a: ");
         int n = sc.nextInt();
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < n; j++) {
-                System.out.println("* ");
+                System.out.print("* ");
             }
             System.out.println();
         }
     }
-    public static void Draw_the_rectangle() {
+    static void Draw_the_rectangle() {
         Scanner sc = new Scanner(System.in);
         System.out.println("[ Draw the rectangle ]");
         System.out.print("Enter length: ");
         int length = sc.nextInt();
-        System.out.println("Enter width: ");
+        System.out.print("Enter width: ");
         int width = sc.nextInt();
         for (int i = 0; i < length; i++) {
             for (int j = 0; j < width; j++) {
-                System.out.println("* ");
+                System.out.print("* ");
             }
             System.out.println();
         }

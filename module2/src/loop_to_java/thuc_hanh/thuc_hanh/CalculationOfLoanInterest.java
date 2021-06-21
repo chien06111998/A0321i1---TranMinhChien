@@ -10,7 +10,7 @@ public class CalculationOfLoanInterest {
         double money = sc.nextDouble();
         System.out.print("Enter loan month number: ");
         int month = sc.nextInt();
-        System.out.println("Enter interest rate by year: ");
+        System.out.print("Enter interest rate by year: ");
         double interest = sc.nextDouble();
         double interest_amount = money * ((interest/100)/12) * month;
         System.out.println("Total of interset: " + interest_amount);
